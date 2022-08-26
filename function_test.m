@@ -90,7 +90,11 @@ switch func_to_opt
     case 'Problem_76'
         f = @(x) problem_76_func(x);
         gradf = @(x) problem_76_grad(x);
+        Hessf = @(x) problem_76_hess(x);
 
+     case 'Problem_81'
+        f = @(x) problem_81_func(x);
+        gradf = @(x) problem_81_grad(x);
 end
 
 % Initialize and name figures
